@@ -17,5 +17,11 @@ fi
 # prompt customization generated with http://bashrcgenerator.com/
 export PS1='\[\e[00;37m\][\u@\h:\[\e[0m\]\[\e[00;36m\]\w\[\e[0m\]\[\e[00;37m\]]\[\e[0m\]$(__git_ps1 " (%s)"): '
 
+# ignore and erase dups in history_bash
+HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=5000
+export HISTFILESIZE=5000
+shopt -s histappend
+
 # Added git prompt customization from http://buddylindsey.com/adding-git-data-to-your-bash-prompt/
 source ~/.git-prompt.sh
