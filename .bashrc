@@ -25,3 +25,7 @@ shopt -s histappend
 
 # Added git prompt customization from http://buddylindsey.com/adding-git-data-to-your-bash-prompt/
 source ~/.git-prompt.sh
+
+# MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/share/man:$MANPATH
